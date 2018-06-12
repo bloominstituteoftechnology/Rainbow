@@ -65,17 +65,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHITE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9Q-tG-OSr">
+                                <rect key="frame" x="81" y="55" width="212" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="A9Q-tG-OSr" firstAttribute="centerX" secondItem="FP4-x2-Ibj" secondAttribute="centerX" id="Aqp-5f-Xi2"/>
+                            <constraint firstItem="A9Q-tG-OSr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="YKu-mY-N1d"/>
+                            <constraint firstItem="A9Q-tG-OSr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="gUW-7Q-ES6"/>
                             <constraint firstItem="FP4-x2-Ibj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pjZ-hE-haQ"/>
                             <constraint firstItem="FP4-x2-Ibj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xtL-3i-B60"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="colorLabel" destination="A9Q-tG-OSr" id="et0-fi-Rtw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
