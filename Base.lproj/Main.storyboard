@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rainbow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZl-td-XBt">
+                                <rect key="frame" x="172" y="242" width="30" height="30"/>
+                                <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="redRainbow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZpT-Us-cgf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1t-bb-0fn">
+                                <rect key="frame" x="148" y="280" width="83" height="30"/>
+                                <state key="normal" title="Orange"/>
+                                <connections>
+                                    <action selector="orangeRainbow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rgg-rS-px8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pom-OH-wbB">
+                                <rect key="frame" x="165" y="318" width="44" height="30"/>
+                                <state key="normal" title="Yellow"/>
+                                <connections>
+                                    <action selector="yellowRainbow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1i-du-VBe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEo-Su-t1B">
+                                <rect key="frame" x="166" y="356" width="42" height="30"/>
+                                <state key="normal" title="Green"/>
+                                <connections>
+                                    <action selector="greenRainbow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HAE-2M-ciB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPz-47-bB8">
+                                <rect key="frame" x="172" y="394" width="31" height="30"/>
+                                <state key="normal" title="Blue"/>
+                                <connections>
+                                    <action selector="blueRainbow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FbY-7k-uQE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g9-ZF-SQj">
+                                <rect key="frame" x="165" y="432" width="45" height="30"/>
+                                <state key="normal" title="Purple"/>
+                                <connections>
+                                    <action selector="purpleRainbow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJZ-96-CXG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="trailing" secondItem="Pom-OH-wbB" secondAttribute="trailing" id="1yJ-KW-2lv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5g9-ZF-SQj" secondAttribute="bottom" constant="205" id="2c2-Iu-EXc"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="leading" secondItem="5g9-ZF-SQj" secondAttribute="leading" id="HDm-Rk-lpZ"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="leading" secondItem="r1t-bb-0fn" secondAttribute="leading" constant="24" id="JVb-Tu-DeP"/>
+                            <constraint firstItem="nEo-Su-t1B" firstAttribute="top" secondItem="Pom-OH-wbB" secondAttribute="bottom" constant="8" symbolic="YES" id="PaZ-KU-KuX"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="trailing" secondItem="r1t-bb-0fn" secondAttribute="trailing" constant="-29" id="SFl-Il-VUM"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="TLD-IH-Bgf"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="trailing" secondItem="KPz-47-bB8" secondAttribute="trailing" id="V2q-kQ-B3z"/>
+                            <constraint firstItem="5g9-ZF-SQj" firstAttribute="top" secondItem="KPz-47-bB8" secondAttribute="bottom" constant="8" symbolic="YES" id="ace-AC-bH4"/>
+                            <constraint firstItem="r1t-bb-0fn" firstAttribute="top" secondItem="iZl-td-XBt" secondAttribute="bottom" constant="8" symbolic="YES" id="b28-kw-jMs"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="trailing" secondItem="nEo-Su-t1B" secondAttribute="trailing" id="iSP-20-AMR"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="leading" secondItem="Pom-OH-wbB" secondAttribute="leading" id="lDs-bB-zij"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="leading" secondItem="nEo-Su-t1B" secondAttribute="leading" id="mKV-JK-WJ3"/>
+                            <constraint firstItem="KPz-47-bB8" firstAttribute="top" secondItem="nEo-Su-t1B" secondAttribute="bottom" constant="8" symbolic="YES" id="mWd-lp-MNR"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tAS-vw-WUC"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="leading" secondItem="KPz-47-bB8" secondAttribute="leading" id="tjm-Fp-L4J"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="222" id="vx3-q2-g0c"/>
+                            <constraint firstItem="iZl-td-XBt" firstAttribute="trailing" secondItem="5g9-ZF-SQj" secondAttribute="trailing" id="xbm-8V-V4L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
