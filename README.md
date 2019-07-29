@@ -29,4 +29,4 @@ If everything works, congratulations! You've just built your first iOS app on yo
 
 ## Submit
 
-Send your completed app to your Project Manager.
+Send your completed app to your Team Lead (TL)
